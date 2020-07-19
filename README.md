@@ -117,7 +117,7 @@ The file `download.gradle` directs gradle to download the two models used in the
 
 ### Step 7: Turn on Android phone developer mode
 
-In our example, we have used a Motorola Moto E4 phone. Go to _Settings_ and scroll to _About phone_. Scroll down to _Build number_ and click it seven times. After a few taps, the steps should count down until you unlock the developer options. Once developer options are activated, you will see a message that reads, You are now a developer!
+In our example, we have used a Motorola Moto E4 phone. Go to _Settings_ and scroll to _About phone_. Scroll down to _Build number_ and click it seven times. After a few taps, the steps should count down until you unlock the developer options. Then, back in _Settings_, scroll to _Developer options_ and turn Developer mode on. Once developer options are activated, you will see a message that reads, You are now a developer!
 
 
 ### Step 8: Install and run the app
@@ -126,5 +126,10 @@ Connect the Android device to the computer and be sure to approve any ADB permis
 
 <img src="images/run-app.png?raw=true" alt="App Example Page" width="223" height="152"/>
 
+
 ## Assets folder
 _Do not delete the assets folder content_. If you explicitly deleted the files, choose `Build -> Rebuild` to re-download the deleted model files into the assets folder.
+
+
+## Sources
+
