@@ -34,11 +34,11 @@ For details of the model used, visit [Image classification](https://www.tensorfl
 
 ### Step 1: Data collection
 
-Begin by deciding which objects you plan to train your model on. In this example, we have used a number of images of stuffed animals, but you may use any objects for your model. 
-
 To train the machine learning model, we'll be using [Google's Teachable Machine 2.0](https://teachablemachine.withgoogle.com/train/image). Aside from Image Project, Teachable Machine also includes options Audio Project and Pose Project, which will not be covered in this tutorial.
 
-There are two ways in which you can collect your data. The first method would be to take photos of each object using your phone camera and separating them into different files on your computer. Then, click the "Upload" option for each class and upload the appropriate file. The second method would be to use the webcam option under "Add Image Samples" for each class. For both options, be sure to only include one object for each class (i.e. if training on images of apples and bananas, make sure there are no banana images in the apple class and vice versa). It is recommended that you take at least 50 image samples for each class and have at least 3 classes. Your image samples should also ideally be from different angles.
+Begin by deciding which objects you plan to train your model on. Then, you can collect your data in two ways. The first method would be to take photos of each object using your  camera and separate them into different files on your computer. Then, click the "Upload" option for each class and upload the appropriate file. The second method would be to use the webcam option under "Add Image Samples" for each class. 
+
+For both options, be sure to only include one object for each class (i.e. if training on images of apples and bananas, make sure there are no banana images in the apple class and vice versa). It is recommended that you take at least 50 image samples for each class and have at least 3 classes. Your image samples should also ideally be from different angles.
 
 Click the pencil icon next to each Class # and rename the class.
 
