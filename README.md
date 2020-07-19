@@ -110,6 +110,9 @@ The file `download.gradle` directs gradle to download the two models used in the
 
 <aside class="note"><b>Note:</b><p>`build.gradle` is configured to use TensorFlow Lite's nightly build.</p><p>If you see a build error related to compatibility with Tensorflow Lite's Java API (for example, `method X is undefined for type Interpreter`), there has likely been a backwards compatible change to the API. You will need to run `git pull` in the examples repo to obtain a version that is compatible with the nightly build.</p></aside>
 
+<img src="images/build-app-1.png?raw=true" alt="App Example Page" width="427" height="204"/>
+
+<img src="images/build-app-2.png?raw=true" alt="App Example Page" width="732" height="204"/>
 
 ### Step 7: Install and run the app
 
