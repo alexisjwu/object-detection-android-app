@@ -27,9 +27,9 @@ For details of the model used, visit [Image classification](https://www.tensorfl
 
 *   Android device in [developer mode](https://developer.android.com/studio/debug/dev-options) with USB debugging enabled
 
-*   USB cable (to connect Android device to your computer)
+*   USB cable (to connect Android device to your computer)<br />
 
-<br />
+
 ## Create and train model
 
 ### Step 1: Data collection
