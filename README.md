@@ -12,7 +12,7 @@ This is an example application for [TensorFlow Lite](https://tensorflow.org/lite
 
 For details of the model used, visit [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview).
 
-<img src="images/classifydemo_img4.png?raw=true" style="width: 40%" />
+<img src="images/app-example.png?raw=true"/>
 
 
 ### Tutorial Overview
