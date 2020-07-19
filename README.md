@@ -134,7 +134,9 @@ _Do not delete the assets folder content_. If you explicitly deleted the files, 
 ## Sources
 
 [Google's Teachable Machine 2.0](https://teachablemachine.withgoogle.com/)
+
 [TensorFlow Reference Code](https://github.com/tensorflow/examples)
 
 [Dinesh Raturi's Fruits Prediction Android App Tutorial](https://www.youtube.com/watch?v=fNbxSXi0OkA)
 
+[How-To Geek: How to Access Developer Options and Enable USB Debugging on Android](https://www.howtogeek.com/129728/how-to-access-the-developer-options-menu-and-enable-usb-debugging-on-android-4.2/)
