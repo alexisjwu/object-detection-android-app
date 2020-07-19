@@ -8,7 +8,7 @@ Last updated: 07/19/2020
 
 This tutorial provides step-by-step instructions on how to create an Android app using Google's Teachable Machine and Android Studio. By following the tutorial, you will be able to use your Android app to detect objects through supervised machine learning. 
 
-This is an example application for [TensorFlow Lite](https://tensorflow.org/lite) on Android. It uses [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview) to continuously classify objects it sees from the device's back camera. Inference is performed using the TensorFlow Lite Java API. The demo app classifies frames in real-time, displaying the top most probable classifications. 
+This is an example application for [TensorFlow Lite](https://tensorflow.org/lite) on Android. It uses image classification to continuously classify objects it sees from the device's back camera. Inference is performed using the TensorFlow Lite Java API. The demo app classifies frames in real-time, displaying the top most probable classifications. 
 
 For details of the model used, visit [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview).
 
