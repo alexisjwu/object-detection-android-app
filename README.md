@@ -28,7 +28,7 @@ For details of the model used, visit [Image classification](https://www.tensorfl
 *   Android device in [developer mode](https://developer.android.com/studio/debug/dev-options) with USB debugging enabled
 *   USB cable (to connect Android device to your computer)
 
-<br />
+<br/>
 
 ## Create and train model
 
@@ -41,7 +41,7 @@ Begin by deciding which objects you plan to train your model on. Then, you can c
 1. Take photos of each object using your phone camera, separate them into different files, and upload the appropriate file for each class. 
 2. Use the webcam option under "Add Image Samples" for each class on the Teachable Machine website.
 
-<b>Notes</b>
+### Notes
 *   Be sure to only include one object for each class (i.e. make sure there are no banana images in the apple class and vice versa). 
 *   It is recommended that you take at least 50 image samples for each class and have at least 3 classes. 
 *   Your image samples should also ideally be from different angles.
@@ -54,7 +54,7 @@ Once you have collected all the data and created your classes, you will train yo
 
 In the preview window, turn the input on and test out your model. Under the output, your model should be able to distinguish between the objects. If you would like to add more image samples, you will need to go through the process again to re-train your model.
 
-<br />
+<br/>
 
 ## Build and run app
 
