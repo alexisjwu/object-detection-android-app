@@ -14,6 +14,13 @@ This is an example application for [TensorFlow Lite](https://tensorflow.org/lite
 
 For details of the model used, visit [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview).
 
+### Tutorial Overview
+
+1. Data collection
+2. Train the model using collected image data
+3. Export machine learning model
+4. Incorporate model into an Android app
+
 
 ## Requirements
 
