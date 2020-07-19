@@ -69,18 +69,20 @@ Now, get the project from [Github](https://github.com/tensorflow/examples). Clic
 Now, copy the file path for the android folder. Open Android Studio and click "Open an existing Android Studio project." A window should pop up that says "Open File or Project." At the top of the window, copy paste the file path and click OK. 
 
 Your screen should look like the one below. Double click on CameraActivity (found under ``app/java/org.tensorflow.lite.examples.classification``), find (using Ctrl+f on Windows) the line of code that says 
+
 ```private Model model = Model.QUANTIZED_EFFICIENTNET;``` 
 
 and change QUANTIZED to FLOAT so that the line of code now reads 
 
-```
-private Model model = Model.FLOAT_EFFICIENTNET;
-```
+```private Model model = Model.FLOAT_EFFICIENTNET;```
 
-Now, inside the tflite package under ``org.tensorflow.lite.examples.classification`` folder, double click on the ClassifierFloatEfficientNet.java class and find the function getModelPath(). Inside this function, there should be a line that says ```return "efficientnet-lite0-fp32.tflite";```. Change the file so that the code now reads
-```
-return "model_unquant.tflite";
-```
+Now, inside the tflite package under ``org.tensorflow.lite.examples.classification`` folder, double click on the ClassifierFloatEfficientNet.java class and find the function getModelPath(). Inside this function, there should be a line that says 
+
+```return "efficientnet-lite0-fp32.tflite";```. 
+
+Change the file so that the code now reads
+
+```return "model_unquant.tflite";```
 
 In the same class, find getLabelPath() and change the code to return ``"labels.txt"`` instead of ``"labels_without_background.txt"``. 
 
@@ -93,17 +95,10 @@ Do the same for ClassifierQuantizedMobileNet.java.
 
 ### Step 6: Build the Android Studio project
 
-Select `Build -> Make Project` and check that the project builds successfully.
-You will need Android SDK configured in the settings. You'll need at least SDK
-version 23. The `build.gradle` file will prompt you to download any missing
-libraries.
+Select `Build -> Make Project` and check that the project builds successfully. You will need Android SDK configured in the settings. You'll need at least SDK
+version 23. The `build.gradle` file will prompt you to download any missing libraries.
 
-The file `download.gradle` directs gradle to download the two models used in the
-example, placing them into `assets`.
-
-<img src="images/classifydemo_img4.png?raw=true" style="width: 40%" />
-
-<img src="images/classifydemo_img2.png?raw=true" style="width: 60%" />
+The file `download.gradle` directs gradle to download the two models used in the example, placing them into `assets`.
 
 <aside class="note"><b>Note:</b><p>`build.gradle` is configured to use TensorFlow Lite's nightly build.</p><p>If you see a build error related to compatibility with Tensorflow Lite's Java API (for example, `method X is undefined for type Interpreter`), there has likely been a backwards compatible change to the API. You will need to run `git pull` in the examples repo to obtain a version that is compatible with the nightly build.</p></aside>
 
