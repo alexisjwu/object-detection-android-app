@@ -12,7 +12,7 @@ This is an example application for [TensorFlow Lite](https://tensorflow.org/lite
 
 For details of the model used, visit [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview).
 
-<img src="images/app-example.png?raw=true" alt="App Example Page" width="300" height="600"/>
+<img src="images/app-example.png?raw=true" alt="App Example Page" width="300" height="550"/>
 
 
 ### Tutorial Overview
