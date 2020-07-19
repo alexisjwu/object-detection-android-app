@@ -115,6 +115,7 @@ The file `download.gradle` directs gradle to download the two models used in the
 
 Connect the Android device to the computer and be sure to approve any ADB permission prompts that appear on your phone. Select `Run -> Run app.` Select the deployment target in the connected devices to the device on which the app will be installed. This will install the app on the device. The app should automatically open and it should be able to recognize the objects you trained the model on. If the labels are not showing up, make sure the ``labels.txt`` file is still in your assets folder.
 
+<img src="images/run-app.png?raw=true" alt="App Example Page" width="223" height="152"/>
 
 ## Assets folder
 _Do not delete the assets folder content_. If you explicitly deleted the files, choose `Build -> Rebuild` to re-download the deleted model files into the assets folder.
