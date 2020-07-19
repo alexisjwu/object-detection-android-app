@@ -22,6 +22,7 @@ For details of the model used, visit [Image classification](https://www.tensorfl
 4. Incorporate model into an Android app
 
 <br />
+
 ## Requirements
 
 *   Android Studio 4.0 (installed on a Mac, Linux, or Windows machine)
