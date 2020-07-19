@@ -62,20 +62,16 @@ In the preview window, turn the input on and test out your model. Under the outp
 
 Now that you've trained your model, you'll need to export it. As the model will be used in an Android app, click on the Tensorflow Lite tab and download both the floating point and quantized models. When you download your floating point model, the folder should include two files: labels.txt and model_unquant.tflite. Similarly, in your quantized model folder, you should have labels.txt and model.tflite. 
 
-Now, get the project from [Github](https://github.com/tensorflow/examples). Click the green code button and download ZIP. You will need to click through a number of folders (examples-master > lite > examples > image_classification > android > app > src > main > assets). In assets, copy the labels.txt, model.tflite, and model_unquant.tflite files (you only need to keep one labels.txt file) into assets. 
+Now, get the project from [Github](https://github.com/tensorflow/examples). Click the green code button and download ZIP. You will need to click through a number of folders (``examples-master/lite/examples/image_classification/android/app/src/main/assets``). In assets, copy the ``labels.txt``, ``model.tflite``, and ``model_unquant.tflite`` files (you only need to keep one ``labels.txt`` file) into assets. 
 
 
 ### Step 4: Incorporate model into an Android app
 
 Now, copy the file path for the android folder. Open Android Studio and click "Open an existing Android Studio project." A window should pop up that says "Open File or Project." At the top of the window, copy paste the file path and click OK. 
 
-Your screen should look like the one below. Double click on CameraActivity (found under app > java > org.tensorflow.lite.examples.classification), find (using Ctrl+f on Windows) the line of code that says ``private Model model = Model.QUANTIZED_EFFICIENTNET;``.
+Your screen should look like the one below. Double click on CameraActivity (found under ``app/java/org.tensorflow.lite.examples.classification``), find (using Ctrl+f on Windows) the line of code that says ``private Model model = Model.QUANTIZED_EFFICIENTNET;`` and change QUANTIZED to FLOAT so that the line of code now reads ``private Model model = Model.FLOAT_EFFICIENTNET;``.
 
-and change QUANTIZED to FLOAT so that the line of code now reads ``private Model model = Model.FLOAT_EFFICIENTNET;``.
-
-Now, inside the tflite package under the org.tensorflow.lite.examples.classification folder, double click on the ClassifierFloatEfficientNet.java class and find the function getModelPath(). Inside this function, there should be a line that says ``return "efficientnet-lite0-fp32.tflite";``.
-
-Change the file so that the code now reads ``return "model_unquant.tflite";``.
+Now, inside the tflite package under ``org.tensorflow.lite.examples.classification`` folder, double click on the ClassifierFloatEfficientNet.java class and find the function getModelPath(). Inside this function, there should be a line that says ``return "efficientnet-lite0-fp32.tflite";``. Change the file so that the code now reads ``return "model_unquant.tflite";``.
 
 In the same class, find getLabelPath() and change the code to return ``"labels.txt"`` instead of ``"labels_without_background.txt"``. 
 
@@ -85,21 +81,6 @@ Next, open the ClassifierQuantizedEfficientNet.java class and find the function 
 
 Do the same for ClassifierQuantizedMobileNet.java. 
 
-
-### Step 5: Clone the TensorFlow examples source code
-
-Clone the TensorFlow examples GitHub repository to your computer to get the demo
-application.
-
-```
-git clone https://github.com/tensorflow/examples
-```
-
-Open the TensorFlow source code in Android Studio. To do this, open Android
-Studio and select `Open an existing project`, setting the folder to
-`examples/lite/examples/image_classification/android`
-
-<img src="images/classifydemo_img1.png?raw=true" />
 
 ### Step 6: Build the Android Studio project
 
@@ -115,33 +96,13 @@ example, placing them into `assets`.
 
 <img src="images/classifydemo_img2.png?raw=true" style="width: 60%" />
 
-<aside class="note"><b>Note:</b><p>`build.gradle` is configured to use
-TensorFlow Lite's nightly build.</p><p>If you see a build error related to
-compatibility with Tensorflow Lite's Java API (for example, `method X is
-undefined for type Interpreter`), there has likely been a backwards compatible
-change to the API. You will need to run `git pull` in the examples repo to
-obtain a version that is compatible with the nightly build.</p></aside>
+<aside class="note"><b>Note:</b><p>`build.gradle` is configured to use TensorFlow Lite's nightly build.</p><p>If you see a build error related to compatibility with Tensorflow Lite's Java API (for example, `method X is undefined for type Interpreter`), there has likely been a backwards compatible change to the API. You will need to run `git pull` in the examples repo to obtain a version that is compatible with the nightly build.</p></aside>
+
 
 ### Step 7: Install and run the app
 
-Connect the Android device to the computer and be sure to approve any ADB
-permission prompts that appear on your phone. Select `Run -> Run app.` Select
-the deployment target in the connected devices to the device on which the app
-will be installed. This will install the app on the device.
+Connect the Android device to the computer and be sure to approve any ADB permission prompts that appear on your phone. Select `Run -> Run app.` Select the deployment target in the connected devices to the device on which the app will be installed. This will install the app on the device. The app should automatically open and it should be able to recognize the objects you trained the model on. If the labels are not showing up, make sure the ``labels.txt`` file is still in your assets folder.
 
-<img src="images/classifydemo_img5.png?raw=true" style="width: 60%" />
-
-<img src="images/classifydemo_img6.png?raw=true" style="width: 70%" />
-
-<img src="images/classifydemo_img7.png?raw=true" style="width: 40%" />
-
-<img src="images/classifydemo_img8.png?raw=true" style="width: 80%" />
-
-To test the app, open the app called `TFL Classify` on your device. When you run
-the app the first time, the app will request permission to access the camera.
-Re-installing the app may require you to uninstall the previous installations.
 
 ## Assets folder
-_Do not delete the assets folder content_. If you explicitly deleted the
-files, choose `Build -> Rebuild` to re-download the deleted model files into the
-assets folder.
+_Do not delete the assets folder content_. If you explicitly deleted the files, choose `Build -> Rebuild` to re-download the deleted model files into the assets folder.
