@@ -68,7 +68,10 @@ Now, get the project from [Github](https://github.com/tensorflow/examples). Clic
 
 Now, copy the file path for the android folder. Open Android Studio and click "Open an existing Android Studio project." A window should pop up that says "Open File or Project." At the top of the window, copy paste the file path and click OK. 
 
-Your screen should look like the one below. Double click on CameraActivity (found under ``app/java/org.tensorflow.lite.examples.classification``), find (using Ctrl+f on Windows) the line of code that says ```private Model model = Model.QUANTIZED_EFFICIENTNET;``` and change QUANTIZED to FLOAT so that the line of code now reads ```private Model model = Model.FLOAT_EFFICIENTNET;```.
+Your screen should look like the one below. Double click on CameraActivity (found under ``app/java/org.tensorflow.lite.examples.classification``), find (using Ctrl+f on Windows) the line of code that says 
+```private Model model = Model.QUANTIZED_EFFICIENTNET;``` 
+and change QUANTIZED to FLOAT so that the line of code now reads 
+```private Model model = Model.FLOAT_EFFICIENTNET;```.
 
 Now, inside the tflite package under ``org.tensorflow.lite.examples.classification`` folder, double click on the ClassifierFloatEfficientNet.java class and find the function getModelPath(). Inside this function, there should be a line that says ```return "efficientnet-lite0-fp32.tflite";```. Change the file so that the code now reads  ```return "model_unquant.tflite";```.
 
