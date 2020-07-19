@@ -38,7 +38,7 @@ To train the machine learning model, we'll be using [Google's Teachable Machine 
 
 Begin by deciding which objects you plan to train your model on. Then, you can collect your data in two ways. 
 
-1. Take photos of each object using your camera, separate them into different files on your computer, and upload the appropriate file for each class. 
+1. Take photos of each object using your phone camera, separate them into different files, and upload the appropriate file for each class. 
 2. Use the webcam option under "Add Image Samples" for each class on the Teachable Machine website.
 
 For both options, be sure to only include one object for each class (i.e. if training on images of apples and bananas, make sure there are no banana images in the apple class and vice versa). It is recommended that you take at least 50 image samples for each class and have at least 3 classes. Your image samples should also ideally be from different angles.
