@@ -8,11 +8,12 @@ Last updated: 07/19/2020
 
 This tutorial provides step-by-step instructions on how to create an Android app using Google's Teachable Machine and Android Studio. By following the tutorial, you will be able to use your Android app to detect objects through supervised machine learning. 
 
-This is an example application for [TensorFlow Lite](https://tensorflow.org/lite) on Android. It uses [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview) to continuously classify whatever it sees from the device's back camera. Inference is performed using the TensorFlow Lite Java API. The demo app classifies frames in real-time, displaying the top most probable classifications. 
+This is an example application for [TensorFlow Lite](https://tensorflow.org/lite) on Android. It uses [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview) to continuously classify objects it sees from the device's back camera. Inference is performed using the TensorFlow Lite Java API. The demo app classifies frames in real-time, displaying the top most probable classifications. 
+
+For details of the model used, visit [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview).
 
 <!-- TODO(b/124116863): Add app screenshot. -->
 
-For details of the model used, visit [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview).
 
 ### Tutorial Overview
 
@@ -24,9 +25,7 @@ For details of the model used, visit [Image classification](https://www.tensorfl
 ### Requirements
 
 *   Android Studio 4.0 (installed on a Mac, Linux, or Windows machine)
-
 *   Android device in [developer mode](https://developer.android.com/studio/debug/dev-options) with USB debugging enabled
-
 *   USB cable (to connect Android device to your computer)
 
 <br />
@@ -39,9 +38,7 @@ Begin by deciding which objects you plan to train your model on. In this example
 
 To train the machine learning model, we'll be using [Google's Teachable Machine 2.0](https://teachablemachine.withgoogle.com/train/image). Aside from Image Project, Teachable Machine also includes options Audio Project and Pose Project, which will not be covered in this tutorial.
 
-There are two ways in which you can collect your data. The first method would be to take photos of each object from different angles using your phone camera and separating them into different files on your computer. Then, click the "Upload" option for each class and upload the appropriate file. The second method would be to use the webcam option under "Add Image Samples" for each class. For both options, be sure to only include one object for each class (i.e. if training on images of apples and bananas, make sure there are no banana images in the apple class and vice versa). 
-
-It is recommended that you take at least 50 image samples for each class and have at least 3 classes. Your image samples should also ideally be from different angles.
+There are two ways in which you can collect your data. The first method would be to take photos of each object using your phone camera and separating them into different files on your computer. Then, click the "Upload" option for each class and upload the appropriate file. The second method would be to use the webcam option under "Add Image Samples" for each class. For both options, be sure to only include one object for each class (i.e. if training on images of apples and bananas, make sure there are no banana images in the apple class and vice versa). It is recommended that you take at least 50 image samples for each class and have at least 3 classes. Your image samples should also ideally be from different angles.
 
 Click the pencil icon next to each Class # and rename the class.
 
@@ -52,6 +49,7 @@ Once you have collected all the data and created your classes, you will train yo
 
 In the preview window, turn the input on and test out your model. Under the output, your model should be able to distinguish between the objects. If you would like to add more image samples, you will need to go through the process again to re-train your model.
 
+<br />
 
 ## Build and run app
 
