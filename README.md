@@ -70,10 +70,17 @@ Now, copy the file path for the android folder. Open Android Studio and click "O
 
 Your screen should look like the one below. Double click on CameraActivity (found under ``app/java/org.tensorflow.lite.examples.classification``), find (using Ctrl+f on Windows) the line of code that says 
 ```private Model model = Model.QUANTIZED_EFFICIENTNET;``` 
-and change QUANTIZED to FLOAT so that the line of code now reads 
-```private Model model = Model.FLOAT_EFFICIENTNET;```.
 
-Now, inside the tflite package under ``org.tensorflow.lite.examples.classification`` folder, double click on the ClassifierFloatEfficientNet.java class and find the function getModelPath(). Inside this function, there should be a line that says ```return "efficientnet-lite0-fp32.tflite";```. Change the file so that the code now reads  ```return "model_unquant.tflite";```.
+and change QUANTIZED to FLOAT so that the line of code now reads 
+
+```
+private Model model = Model.FLOAT_EFFICIENTNET;
+```
+
+Now, inside the tflite package under ``org.tensorflow.lite.examples.classification`` folder, double click on the ClassifierFloatEfficientNet.java class and find the function getModelPath(). Inside this function, there should be a line that says ```return "efficientnet-lite0-fp32.tflite";```. Change the file so that the code now reads
+```
+return "model_unquant.tflite";
+```
 
 In the same class, find getLabelPath() and change the code to return ``"labels.txt"`` instead of ``"labels_without_background.txt"``. 
 
