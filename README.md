@@ -41,12 +41,11 @@ Begin by deciding which objects you plan to train your model on. Then, you can c
 1. Take photos of each object using your phone camera, separate them into different files, and upload the appropriate file for each class. 
 2. Use the webcam option under "Add Image Samples" for each class on the Teachable Machine website.
 
-### Notes
+#### Notes
 *   Be sure to only include one object for each class (i.e. make sure there are no banana images in the apple class and vice versa). 
 *   It is recommended that you take at least 50 image samples for each class and have at least 3 classes. 
 *   Your image samples should also ideally be from different angles.
-
-Click the pencil icon next to each Class # and rename the class.
+*   Click the pencil icon next to each Class # and rename the class.
 
 
 ### Step 2: Train the model using collected image data
