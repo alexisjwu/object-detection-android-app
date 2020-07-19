@@ -84,7 +84,7 @@ Now, inside the tflite package under ``org.tensorflow.lite.examples.classificati
 
 ```
 return "efficientnet-lite0-fp32.tflite";
-```. 
+```
 
 Change the file so that the code now reads
 
