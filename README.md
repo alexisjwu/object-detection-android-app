@@ -12,8 +12,6 @@ This is an example application for [TensorFlow Lite](https://tensorflow.org/lite
 
 For details of the model used, visit [Image classification](https://www.tensorflow.org/lite/models/image_classification/overview).
 
-<img src="images/app-example-seal.png?raw=true" alt="App Example Page" width="300" height="510"/>
-
 
 ### Tutorial Overview
 
@@ -27,6 +25,8 @@ For details of the model used, visit [Image classification](https://www.tensorfl
 *   Android Studio 4.0 (installed on a Mac, Linux, or Windows machine)
 *   Android device in [developer mode](https://developer.android.com/studio/debug/dev-options) with USB debugging enabled
 *   USB cable (to connect Android device to your computer)
+
+<img src="images/app-example-seal.png?raw=true" alt="App Example Page" width="300" height="510"/>
 
 <br/>
 
