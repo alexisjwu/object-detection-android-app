@@ -20,7 +20,6 @@ For details of the model used, visit [Image classification](https://www.tensorfl
 2. Train the model using collected image data
 3. Export machine learning model
 4. Incorporate model into an Android app
-
 <br />
 
 ## Requirements
