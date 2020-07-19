@@ -114,7 +114,13 @@ The file `download.gradle` directs gradle to download the two models used in the
 
 <img src="images/build-app-2.png?raw=true" alt="App Example Page" width="732" height="204"/>
 
-### Step 7: Install and run the app
+
+### Step 7: Turn on Android phone developer mode
+
+In our example, we have used a Motorola Moto E4 phone. Go to _Settings_ and scroll to _About phone_. Scroll down to _Build number_ and click it seven times. After a few taps, the steps should count down until you unlock the developer options. Once developer options are activated, you will see a message that reads, You are now a developer!
+
+
+### Step 8: Install and run the app
 
 Connect the Android device to the computer and be sure to approve any ADB permission prompts that appear on your phone. Select `Run -> Run app.` Select the deployment target in the connected devices to the device on which the app will be installed. This will install the app on the device. The app should automatically open and it should be able to recognize the objects you trained the model on. If the labels are not showing up, make sure the ``labels.txt`` file is still in your assets folder.
 
