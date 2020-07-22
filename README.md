@@ -2,7 +2,7 @@
 
 ### Object Detection Android App using Teachable Machine and Tensorflow Lite
 
-Last updated: 07/19/2020
+Last updated: 07/22/2020 by Alexis Wu
 
 ## Overview
 
