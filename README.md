@@ -1,8 +1,8 @@
 # Object Classification using Machine Learning
 
-### Object Detection Android App using Teachable Machine and Tensorflow Lite
+### Object Detection Android App Tutorial using Teachable Machine and Tensorflow Lite
 
-Last updated: 07/22/2020 by Alexis Wu
+Last updated: November 19, 2021 by Alexis Wu
 
 ## Overview
 
@@ -140,3 +140,7 @@ _Do not delete the assets folder content_. If you explicitly deleted the files, 
 [Dinesh Raturi's Fruits Prediction Android App Youtube Tutorial](https://www.youtube.com/watch?v=fNbxSXi0OkA)
 
 [How-To Geek: How to Access Developer Options and Enable USB Debugging on Android](https://www.howtogeek.com/129728/how-to-access-the-developer-options-menu-and-enable-usb-debugging-on-android-4.2/)
+
+## Contact
+
+For any questions, suggestions, or concerns, please contact me at alexiswu@princeton.edu.
